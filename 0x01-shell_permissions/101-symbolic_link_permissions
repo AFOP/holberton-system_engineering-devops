@@ -1,2 +1,2 @@
 #!/bin/bash
-chown vincent:staff /home/holberton-system_engineering-devops/0x01-shell_permissions/_hello
+chown vincent:staff /_hello
