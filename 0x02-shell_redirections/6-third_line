@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'FNR == 3' iacta
+head -n 3 /home/holberton-system_engineering-devops/0x02-shell_redirections/iacta
