@@ -3,4 +3,4 @@ i=i++
 git add .
 git commit -m "$i"
 git push
-Username for 'https://github.com': AFOP
+Username for 'https://github.com' > AFOP
