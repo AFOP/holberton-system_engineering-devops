@@ -1,0 +1,2 @@
+#!/bin/bash
+declare -i VARIABLE=$TRUEKNOWLEDGE+"128" | echo $VARIABLE
