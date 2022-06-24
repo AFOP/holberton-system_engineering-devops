@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# use the while that display "Best School" 10 times
+counter=10
+until [ $counter == 1 ]
+do
+	echo "Best School"
+	counter=$((counter-1))
+done
