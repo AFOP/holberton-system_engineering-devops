@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Gives you information about the school file  
 filename="school"
-if [ -f "$filename" ]
+if [ -f "$filename" ] | [ -d "$filename" ]
 then
 	echo "$filename file exists"
 	if [ -s "$filename" ]
