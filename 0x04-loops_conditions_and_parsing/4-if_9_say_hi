@@ -6,7 +6,7 @@ do
 	if [ "$counter" == 9 ]
 	then
 		echo "Best School"
-		echo "hi"
+		echo "Hi"
 		(( counter++ ))
 	fi
 	echo "Best School"
