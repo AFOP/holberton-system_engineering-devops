@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Display the content of the current directory  
+for FILE in *
+do
+	trimmed=$(echo "$FILE" | cut -f 2 -d '-')
+	echo "$trimmed"
+done
