@@ -1,0 +1,5 @@
+#ed!/usr/bin/env bash
+#  script stopped our 4-to_infinity_and_beyond
+p=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$p"
+
