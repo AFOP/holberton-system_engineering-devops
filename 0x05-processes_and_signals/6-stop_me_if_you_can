@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# script stopped our 4-to_infinity_and_beyond cannot use kill or killall
+pkill -f "4-to_infinity_and_beyond"
+
