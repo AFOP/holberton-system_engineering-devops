@@ -5,4 +5,3 @@
 # You cannot use -l
 # You do not need to handle the case of a private key protected by a passphrase
 ssh -i ~/.ssh/holberton ubuntu@107.23.166.12
-
