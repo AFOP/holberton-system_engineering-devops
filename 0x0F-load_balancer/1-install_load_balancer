@@ -9,12 +9,8 @@
 sudo apt-get -y update
 sudo apt-get install -y haproxy
 sudo chmod 777 /etc/haproxy/haproxy.cfg
-echo "frontend http_front" >> /etc/haproxy/haproxy.cfg
+echo "listen firstbalance" >> /etc/haproxy/haproxy.cfg
 echo "  bind *:80" >> /etc/haproxy/haproxy.cfg
-echo "  default backend http_back" >> /etc/haproxy/haproxy.cfg
-echo "backend http_back" >> /etc/haproxy/haproxy.cfg
-echo "  balance roundrobin" >> /etc/haproxy/haproxy.cfg
 echo "  server 4592-web-01 54.242.220.107:80 $CHECK" >> /etc/haproxy/haproxy.cfg
 echo "  server 4592-web-02 54.211.63.59:80 $CHECK" >> /etc/haproxy/haproxy.cfg
-echo "  server 4592-lb-01 3.80.155.103:80 $CHECK" >> /etc/haproxy/haproxy.cfg
-sudo service haproxy start
+sudoservice haproxy start
