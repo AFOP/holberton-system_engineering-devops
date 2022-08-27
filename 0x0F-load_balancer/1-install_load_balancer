@@ -13,4 +13,4 @@ echo "listen firstbalance" >> /etc/haproxy/haproxy.cfg
 echo "  bind *:80" >> /etc/haproxy/haproxy.cfg
 echo "  server 4592-web-01 54.242.220.107:80 $CHECK" >> /etc/haproxy/haproxy.cfg
 echo "  server 4592-web-02 54.211.63.59:80 $CHECK" >> /etc/haproxy/haproxy.cfg
-sudoservice haproxy restart
+service haproxy start
