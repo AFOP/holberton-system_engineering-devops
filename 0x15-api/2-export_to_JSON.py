@@ -18,7 +18,6 @@ if __name__ == "__main__":
 
     dict_json = {}
     list_tasks = []
-    dict_task = {}
 
     for task in todos.json():
         if task.get('userId') == int(userId):
