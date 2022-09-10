@@ -9,7 +9,7 @@ import csv
 import json
 
 if __name__ == "__main__":
-    jsonfile = open('file.json', 'w')
+
     userId = sys.argv[1]
     user = requests.get("https://jsonplaceholder.typicode.com/users/{}"
                         .format(userId))
