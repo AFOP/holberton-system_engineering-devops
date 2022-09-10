@@ -21,11 +21,12 @@ if __name__ == "__main__":
     dict_task = {}
 
     for task in todos.json():
-            if task.get('userId') == int(userId):
-                dict_task = {"task": task.get('title'),
-                             "completed": task.get('completed'),
-                             "username": user.json().get('username')}
-                list_tasks.append(dict_task)
+        if task.get('userId') == int(userId):
+            dict_task = {
+                        "task": task.get('title'),
+                        "completed": task.get('completed'),
+                        "username": user.json().get('username')}
+            list_tasks.append(dict_task)
     dict_json[userId] = list_tasks
     filename = userId + '.json'
     with open(filename, mode='w') as f:
